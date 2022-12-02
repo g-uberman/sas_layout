@@ -52,9 +52,20 @@
   align-items: center;
   flex-direction: column;
   height: 528px;
+  position: relative;
 }
-#carousel.first {
+#carousel.zero {
+  background-image: url("../images/banner0.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+#carousel.one {
   background-image: url("../images/banner1.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+#carousel.two {
+  background-image: url("../images/banner2.jpg");
   background-size: 100%;
   background-position: center;
 }
@@ -68,12 +79,14 @@
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   border-radius: 4px;
+  text-align: center;
 }
 #carousel .blueBox .white {
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 4rem;
+  line-height: 1;
 }
 #carousel .blueBox .gold {
   color: #caa977;
@@ -84,13 +97,22 @@
 #carousel button {
   font-weight: 900;
 }
-#carousel .smallSquare {
+
+#carouselControl {
+  position: absolute;
+  bottom: 10px;
+}
+#carouselControl .blueSquare {
   width: 20px;
   height: 20px;
   margin: 3.2px;
   border: none;
   border-radius: 2px;
   background: #000066;
+  cursor: pointer;
+}
+#carouselControl .active {
+  background: #0087f5;
 }
 
 * {

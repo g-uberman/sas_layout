@@ -1,9 +1,22 @@
 #carousel {
   @include flexCenter(column);
   height: 528px;
+  position: relative;
 
-  &.first {
+  &.zero {
+    background-image: url("../images/banner0.jpg");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &.one {
     background-image: url("../images/banner1.jpg");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &.two {
+    background-image: url("../images/banner2.jpg");
     background-size: 100%;
     background-position: center;
   }
@@ -15,12 +28,14 @@
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     border-radius: 4px;
+    text-align: center;
 
     .white {
       color: $white;
       text-transform: uppercase;
       font-weight: 900;
       font-size: 4rem;
+      line-height: 1;
     }
 
     .gold {
@@ -34,13 +49,23 @@
   button {
     font-weight: 900;
   }
+}
 
-  .smallSquare {
+#carouselControl {
+  position: absolute;
+  bottom: 10px;
+
+  .blueSquare {
     width: 20px;
     height: 20px;
     margin: 3.2px;
     border: none;
     border-radius: 2px;
     background: $darkBlue;
+    cursor: pointer;
+  }
+
+  .active {
+    background: $lightBlue;
   }
 }
