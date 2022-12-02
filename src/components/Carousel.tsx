@@ -1,20 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 
 export const Carousel = () => {
   const [carousel, setCarousel] = useState(0);
+  let timeoutId: any = 0;
 
-  const autocycle = () => {
-    const rotate = () => {
-      if (carousel < 2) {
-        setCarousel(carousel + 1);
-      } else {
-        setCarousel(0);
-      }
-    };
-    setInterval(rotate, 3000);
+  const rotate = () => {
+    if (carousel < 2) {
+      setCarousel(carousel + 1);
+    } else {
+      setCarousel(0);
+    }
   };
-  autocycle();
+
+  useEffect(() => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(rotate, 3000);
+  }, [carousel]);
+
+  const handleButton = (number: number) => {
+    clearTimeout(timeoutId);
+    setCarousel(number);
+  };
 
   return (
     <>
@@ -29,15 +36,15 @@ export const Carousel = () => {
           <div id="carouselControl">
             <button
               className="blueSquare active"
-              onClick={() => setCarousel(0)}
+              onClick={() => handleButton(0)}
             ></button>
             <button
               className="blueSquare"
-              onClick={() => setCarousel(1)}
+              onClick={() => handleButton(1)}
             ></button>
             <button
               className="blueSquare"
-              onClick={() => setCarousel(2)}
+              onClick={() => handleButton(2)}
             ></button>
           </div>
         </div>
