@@ -4,6 +4,18 @@ import { Button } from "@mui/material";
 export const Carousel = () => {
   const [carousel, setCarousel] = useState(0);
 
+  const autocycle = () => {
+    const rotate = () => {
+      if (carousel < 2) {
+        setCarousel(carousel + 1);
+      } else {
+        setCarousel(0);
+      }
+    };
+    setInterval(rotate, 3000);
+  };
+  autocycle();
+
   return (
     <>
       {carousel === 0 && (
