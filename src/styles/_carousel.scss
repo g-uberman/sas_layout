@@ -1,0 +1,46 @@
+#carousel {
+  @include flexCenter(column);
+  height: 528px;
+
+  &.first {
+    background-image: url("../images/banner1.jpg");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .blueBox {
+    @include flexCenter(column);
+    height: 200px;
+    background: $darkBlue;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+
+    .white {
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 4rem;
+    }
+
+    .gold {
+      color: $gold;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 3rem;
+    }
+  }
+
+  button {
+    font-weight: 900;
+  }
+
+  .smallSquare {
+    width: 20px;
+    height: 20px;
+    margin: 3.2px;
+    border: none;
+    border-radius: 2px;
+    background: $darkBlue;
+  }
+}

@@ -1,5 +1,5 @@
 #header {
-    @include flexCenter;
+    @include flexCenter(column);
     background: $mainBlue;
     height: 82px;
 

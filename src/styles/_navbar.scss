@@ -1,8 +1,5 @@
 #navbar {
-  @include flexCenter;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  @include flexCenter(row);
   background: $darkBlue;
   height: 70px;
 
@@ -30,7 +27,7 @@
   }
 
   .cell.center {
-    @include flexCenter;
+    @include flexCenter(row);
     width: 100%;
     max-width: 1120px;
   }
