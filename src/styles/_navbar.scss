@@ -1,0 +1,18 @@
+#navbar {
+    @include flexCenter;
+    background: $darkBlue;
+    height: 70px;
+
+    button {
+        border: none;
+        background: none;
+        color: $white;
+        padding: 0 1.25rem 0;
+        font-weight: 400;
+        font-size: 1em;
+
+        &:hover{
+            color: $lightBlue;
+        }
+    }
+}

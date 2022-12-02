@@ -1,0 +1,9 @@
+#header {
+    @include flexCenter;
+    background: $mainBlue;
+    height: 82px;
+
+    img {
+        height: 55px;
+    }
+}

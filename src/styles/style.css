@@ -2,9 +2,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #080099;
+  background: #000099;
   height: 82px;
 }
 #header img {
   height: 55px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000066;
+  height: 70px;
+}
+#navbar button {
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 0 1.25rem 0;
+  font-weight: 400;
+  font-size: 1em;
+}
+#navbar button:hover {
+  color: #0087F5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Scandinavian New", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }/*# sourceMappingURL=style.css.map */
