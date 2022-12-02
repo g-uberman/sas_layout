@@ -27,6 +27,21 @@
 #navbar button:hover {
   color: #0087F5;
 }
+#navbar #search {
+  color: #fff;
+  scale: 1.4;
+  cursor: pointer;
+}
+#navbar .cell {
+  min-width: 40px;
+}
+#navbar .cell.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1120px;
+}
 
 * {
   padding: 0;

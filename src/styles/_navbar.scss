@@ -1,18 +1,37 @@
 #navbar {
-    @include flexCenter;
-    background: $darkBlue;
-    height: 70px;
+  @include flexCenter;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  background: $darkBlue;
+  height: 70px;
 
-    button {
-        border: none;
-        background: none;
-        color: $white;
-        padding: 0 1.25rem 0;
-        font-weight: 400;
-        font-size: 1em;
+  button {
+    border: none;
+    background: none;
+    color: $white;
+    padding: 0 1.25rem 0;
+    font-weight: 400;
+    font-size: 1em;
 
-        &:hover{
-            color: $lightBlue;
-        }
+    &:hover {
+      color: $lightBlue;
     }
+  }
+
+  #search {
+    color: $white;
+    scale: 1.4;
+    cursor: pointer;
+  }
+
+  .cell {
+    min-width: 40px;
+  }
+
+  .cell.center {
+    @include flexCenter;
+    width: 100%;
+    max-width: 1120px;
+  }
 }
