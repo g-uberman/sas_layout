@@ -28,9 +28,9 @@ export const Carousel = () => {
       {carousel === 0 && (
         <div id="carousel" className="zero">
           <div className="blueBox">
-            <div className="white">
+            <h1>
               SAS' business <br /> transformation plan{" "}
-            </div>
+            </h1>
           </div>
           <Button variant="contained" size="large" disableElevation>Read about the chapter 11 process</Button>
           <div id="carouselControl">
@@ -53,8 +53,8 @@ export const Carousel = () => {
       {carousel === 1 && (
         <div id="carousel" className="one">
           <div className="blueBox">
-            <div className="white">Interim report Q4</div>
-            <div className="gold">2022</div>
+            <h1>Interim report Q4</h1>
+            <h2 className="gold">2022</h2>
           </div>
           <Button variant="contained" size="large" disableElevation>Read the report</Button>
           <div id="carouselControl">
@@ -77,8 +77,8 @@ export const Carousel = () => {
       {carousel === 2 && (
         <div id="carousel" className="two">
           <div className="blueBox">
-            <div className="white">Sustainability</div>
-            <div className="gold">at SAS</div>
+            <h1>Sustainability</h1>
+            <h2 className="gold">at SAS</h2>
           </div>
           <Button variant="contained" size="large" disableElevation>Read more</Button>
           <div id="carouselControl">

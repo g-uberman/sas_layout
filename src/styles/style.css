@@ -1,3 +1,37 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1;
+  color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #fff;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.gold {
+  color: #caa977;
+}
+
+.blue {
+  color: #000066;
+}
+
+button {
+  font-weight: 900;
+}
+
 #header {
   display: flex;
   justify-content: center;
@@ -81,22 +115,6 @@
   border-radius: 4px;
   text-align: center;
 }
-#carousel .blueBox .white {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 4rem;
-  line-height: 1;
-}
-#carousel .blueBox .gold {
-  color: #caa977;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 3rem;
-}
-#carousel button {
-  font-weight: 900;
-}
 
 #carouselControl {
   position: absolute;
@@ -129,15 +147,24 @@
 }
 
 .card {
-  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   height: 618px;
+  padding: 26px 32px 36px;
   background: #000066;
   border: 1px solid #000066;
   border-radius: 4px;
 }
 .card:nth-of-type(even) {
   background: #fff;
+}
+.card button {
+  font-weight: 900;
+  margin: 36px 0;
 }
 
 * {

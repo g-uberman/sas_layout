@@ -1,9 +1,11 @@
-@import './mixins';
-@import './colors';
-@import './header';
-@import './navbar';
-@import './carousel';
-@import './cards';
+@import './shared/colors';
+@import './shared/mixins';
+@import './shared/fonts';
+@import './shared/buttons';
+@import './specific/header';
+@import './specific/navbar';
+@import './specific/carousel';
+@import './specific/cards';
 
 * {
     padding: 0;
