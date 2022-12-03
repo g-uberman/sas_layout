@@ -63,6 +63,13 @@ export const Cards = () => {
 
       <div className="card report">
         <h3>Interim Report Q4 2022</h3>
+        <ul>
+          <li className="pdf"><a href="">Report - English</a></li>
+          <li className="pdf"><a href="">Rapport - Svenska</a></li>
+          <li className="pdf"><a href="">Presentation - English</a></li>
+          <li className="xls"><a href="">Alternative Performance Measures - English</a></li>
+          <li className="xls"><a href="">P&L, balancesheet, cash flow - English</a></li>
+        </ul>
         <Button variant="contained" size="large" disableElevation>
           Read the report
         </Button>

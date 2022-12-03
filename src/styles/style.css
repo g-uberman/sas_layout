@@ -170,6 +170,15 @@ h3 {
 .card button {
   margin: 36px 0;
 }
+.card a, .card a:visited {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+.card a:hover {
+  text-decoration: underline;
+}
 
 .card.news {
   text-align: center;
@@ -178,15 +187,6 @@ h3 {
 }
 .card.news div {
   margin-bottom: 1rem;
-}
-.card.news a, .card.news a:visited {
-  display: block;
-  text-decoration: none;
-  font-weight: 700;
-  color: #fff;
-}
-.card.news a:hover {
-  text-decoration: underline;
 }
 
 .card.events {
@@ -220,6 +220,29 @@ h3 {
   margin-right: 1rem;
   padding: 0 10px;
   text-align: center;
+}
+
+.card.report ul {
+  padding-left: 10px;
+}
+.card.report li {
+  margin: 0;
+  padding: 20px 0px 1px 0px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+}
+.card.report li.pdf {
+  background-image: url("../images/pdf-icon.png");
+}
+.card.report li.xls {
+  background-image: url("../images/xls-icon.png");
+}
+.card.report a {
+  font-weight: 500;
+  margin-left: 39px;
+  margin-bottom: 21px;
 }
 
 * {

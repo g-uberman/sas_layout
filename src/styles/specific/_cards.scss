@@ -25,16 +25,6 @@
   button {
     margin: 36px 0;
   }
-}
-
-.card.news {
-  text-align: center;
-  line-height: 1.35;
-  color: $white;
-
-  div {
-    margin-bottom: 1rem;
-  }
 
   a, a:visited {
     display: block;
@@ -45,6 +35,16 @@
 
   a:hover {
     text-decoration: underline;
+  }
+}
+
+.card.news {
+  text-align: center;
+  line-height: 1.35;
+  color: $white;
+
+  div {
+    margin-bottom: 1rem;
   }
 }
 
@@ -71,5 +71,35 @@
     margin-right: 1rem;
     padding: 0 10px;
     text-align: center;
+  }
+}
+
+.card.report {
+  ul {
+    // background-image: url("../images/banner1.jpg");
+    padding-left: 10px;
+  }
+  
+  li {
+    margin: 0;
+    padding: 20px 0px 1px 0px;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px;
+  }
+  
+  li.pdf {
+    background-image: url("../images/pdf-icon.png");
+  }
+
+  li.xls {
+    background-image: url("../images/xls-icon.png");
+  }
+
+  a {
+    font-weight: 500;
+    margin-left: 39px;
+    margin-bottom: 21px;
   }
 }
