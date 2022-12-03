@@ -75,31 +75,35 @@
 }
 
 .card.report {
-  ul {
-    // background-image: url("../images/banner1.jpg");
-    padding-left: 10px;
+  div {
+    margin: 10px 20px;
   }
-  
-  li {
-    margin: 0;
-    padding: 20px 0px 1px 0px;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25px;
+  a {
+    font-size: 0.875rem;
+    margin-left: 39px;
+    margin-bottom: 40px;
+    position: relative;
   }
-  
-  li.pdf {
+
+  a.pdf:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    left: -36px;
+    top: -8px;
+    width: 25px;
+    height: 32px;
     background-image: url("../images/pdf-icon.png");
   }
-
-  li.xls {
+  
+  a.xls:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    left: -36px;
+    top: -8px;
+    width: 25px;
+    height: 32px;
     background-image: url("../images/xls-icon.png");
-  }
-
-  a {
-    font-weight: 500;
-    margin-left: 39px;
-    margin-bottom: 21px;
   }
 }

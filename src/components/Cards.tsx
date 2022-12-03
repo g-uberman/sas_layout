@@ -63,13 +63,13 @@ export const Cards = () => {
 
       <div className="card report">
         <h3>Interim Report Q4 2022</h3>
-        <ul>
-          <li className="pdf"><a href="">Report - English</a></li>
-          <li className="pdf"><a href="">Rapport - Svenska</a></li>
-          <li className="pdf"><a href="">Presentation - English</a></li>
-          <li className="xls"><a href="">Alternative Performance Measures - English</a></li>
-          <li className="xls"><a href="">P&L, balancesheet, cash flow - English</a></li>
-        </ul>
+        <div>
+          <a href="" className="pdf">Report - English</a>
+          <a href="" className="pdf">Rapport - Svenska</a>
+          <a href="" className="pdf">Presentation - English</a>
+          <a href="" className="xls">Alternative Performance Measures - English</a>
+          <a href="" className="xls">P&L, balancesheet, cash flow - English</a>
+        </div>
         <Button variant="contained" size="large" disableElevation>
           Read the report
         </Button>

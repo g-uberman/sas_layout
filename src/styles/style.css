@@ -222,27 +222,34 @@ h3 {
   text-align: center;
 }
 
-.card.report ul {
-  padding-left: 10px;
-}
-.card.report li {
-  margin: 0;
-  padding: 20px 0px 1px 0px;
-  list-style: none;
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 25px;
-}
-.card.report li.pdf {
-  background-image: url("../images/pdf-icon.png");
-}
-.card.report li.xls {
-  background-image: url("../images/xls-icon.png");
+.card.report div {
+  margin: 10px 20px;
 }
 .card.report a {
-  font-weight: 500;
+  font-size: 0.875rem;
   margin-left: 39px;
-  margin-bottom: 21px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.card.report a.pdf:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: -36px;
+  top: -8px;
+  width: 25px;
+  height: 32px;
+  background-image: url("../images/pdf-icon.png");
+}
+.card.report a.xls:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: -36px;
+  top: -8px;
+  width: 25px;
+  height: 32px;
+  background-image: url("../images/xls-icon.png");
 }
 
 * {
