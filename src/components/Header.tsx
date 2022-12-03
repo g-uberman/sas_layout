@@ -8,24 +8,21 @@ export const Header = () => {
 
   function scrollHandler() {
     if (document.body.scrollTop > 152 || document.documentElement.scrollTop > 152) {
+      document.getElementById("logoBar")?.classList.add("scrolled");
       setScrolled(true);
     } else {
-      if (scrolled) setScrolled(false);
+      if (scrolled) {
+        document.getElementById("logoBar")?.classList.remove("scrolled");
+        setScrolled(false)
+      };
     }
   }
 
   return (
     <div id="header">
-      {!scrolled && (
       <div id="logoBar">
         <img src={logo} />
       </div>
-      )}
-      {scrolled && (
-      <div id="logoBar" className="scrolled">
-        <img src={logo} />
-      </div>
-      )}
       <NavBar />
     </div>
   );
