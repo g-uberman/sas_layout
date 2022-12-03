@@ -3,6 +3,7 @@ import { Cards } from './components/Cards';
 import { Carousel } from './components/Carousel';
 import { Header } from './components/Header';
 import { NavBar } from './components/NavBar';
+import { Supplier } from './components/Supplier';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <NavBar />
     <Carousel />
     <Cards />
+    <Supplier />
     </>
   );
 }

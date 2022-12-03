@@ -1,0 +1,31 @@
+#supplier {
+    @include flexCenter(row);
+    width: 95%;
+    max-width: 1104px;
+    height: 95px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-image: url("../images/Bas-Info.svg");
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+    background-position: 0.5rem 47%;
+    background-color: $offWhite;
+    border-radius: 4px;
+    transition: background-color .2s ease-in;
+    
+    text-decoration: none;
+    color: $darkBlue;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    &:hover {
+        background-color: $beige;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+  }

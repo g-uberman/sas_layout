@@ -164,7 +164,7 @@ h3 {
   border: 1px solid #000066;
   border-radius: 4px;
 }
-.card:nth-of-type(even) {
+.card.events {
   background: #fff;
 }
 .card button {
@@ -250,6 +250,37 @@ h3 {
   width: 25px;
   height: 32px;
   background-image: url("../images/xls-icon.png");
+}
+
+#supplier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 95%;
+  max-width: 1104px;
+  height: 95px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url("../images/Bas-Info.svg");
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: 0.5rem 47%;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in;
+  text-decoration: none;
+  color: #000066;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+#supplier:hover {
+  background-color: #a7a399;
+}
+#supplier:visited {
+  text-decoration: none;
 }
 
 * {
