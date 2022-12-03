@@ -35,6 +35,13 @@ h3 {
 }
 
 #header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#logoBar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +49,7 @@ h3 {
   background: #000099;
   height: 82px;
 }
-#header img {
+#logoBar img {
   height: 55px;
 }
 
