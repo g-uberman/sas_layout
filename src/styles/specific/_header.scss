@@ -9,8 +9,13 @@
     @include flexCenter(column);
     background: $mainBlue;
     height: 82px;
+    transition: height 0.3s ease-in-out;
 
     img {
         height: 55px;
+    }
+
+    &.scrolled{
+        height: 66px
     }
 }

@@ -48,9 +48,13 @@ h3 {
   flex-direction: column;
   background: #000099;
   height: 82px;
+  transition: height 0.3s ease-in-out;
 }
 #logoBar img {
   height: 55px;
+}
+#logoBar.scrolled {
+  height: 66px;
 }
 
 #navbar {
