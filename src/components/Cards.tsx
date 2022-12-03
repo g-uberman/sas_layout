@@ -8,7 +8,8 @@ export const Cards = () => {
         <h3>Latest News</h3>
         <div>
           <Link to="">
-            Q4 2022: THE TRANSFORMATION PLAN PROGRESSES AND IMPORTANT GOALS ARE REACHED
+            Q4 2022: THE TRANSFORMATION PLAN PROGRESSES AND IMPORTANT GOALS ARE
+            REACHED
           </Link>
           November 30, 2022 08:05 CET
         </div>
@@ -28,19 +29,41 @@ export const Cards = () => {
           <Link to="">CET SAS OPENS NEW ROUTE TO JFK AIRPORT IN NEW YORK</Link>
           November 24, 2022 11:30 CET
         </div>
-        <Button variant="contained" size="large">
+        <Button variant="contained" size="large" disableElevation>
           See all events
         </Button>
       </div>
+
       <div className="card events">
         <h3 className="blue">SAS Events</h3>
-        <Button variant="contained" size="large">
+        <div className="event">
+          <div className="datebox">07 Dec</div>
+          <div>Traffic Figures November 2022</div>
+        </div>
+        <div className="event">
+          <div className="datebox">10 Jan</div>
+          <div>Traffic Figures December 2022</div>
+        </div>
+        <div className="event">
+          <div className="datebox">24 Jan</div>
+          <div>Annual and Sustainability Report 2022</div>
+        </div>
+        <div className="event">
+          <div className="datebox">07 Feb</div>
+          <div>Traffic Figures January 2023</div>
+        </div>
+        <div className="event">
+          <div className="datebox">24 Feb</div>
+          <div>Interim Report Q1 2023</div>
+        </div>
+        <Button variant="contained" size="large" disableElevation>
           See all events
         </Button>
       </div>
+
       <div className="card report">
         <h3>Interim Report Q4 2022</h3>
-        <Button variant="contained" size="large">
+        <Button variant="contained" size="large" disableElevation>
           Read the report
         </Button>
       </div>

@@ -32,7 +32,7 @@ export const Carousel = () => {
               SAS' business <br /> transformation plan{" "}
             </h1>
           </div>
-          <Button variant="contained" size="large">Read about the chapter 11 process</Button>
+          <Button variant="contained" size="large" disableElevation>Read about the chapter 11 process</Button>
           <div id="carouselControl">
             <button
               className="blueSquare active"
@@ -56,7 +56,7 @@ export const Carousel = () => {
             <h1>Interim report Q4</h1>
             <h2 className="gold">2022</h2>
           </div>
-          <Button variant="contained" size="large">Read the report</Button>
+          <Button variant="contained" size="large" disableElevation>Read the report</Button>
           <div id="carouselControl">
             <button
               className="blueSquare"
@@ -80,7 +80,7 @@ export const Carousel = () => {
             <h1>Sustainability</h1>
             <h2 className="gold">at SAS</h2>
           </div>
-          <Button variant="contained" size="large">Read more</Button>
+          <Button variant="contained" size="large" disableElevation>Read more</Button>
           <div id="carouselControl">
             <button
               className="blueSquare"

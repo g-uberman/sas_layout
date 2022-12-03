@@ -44,6 +44,10 @@
     border-radius: 2px;
     background: $darkBlue;
     cursor: pointer;
+
+    &:hover{
+      background: $lightBlue;  
+    }
   }
 
   .active {

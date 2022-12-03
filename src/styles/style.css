@@ -131,6 +131,9 @@ h3 {
   background: #000066;
   cursor: pointer;
 }
+#carouselControl .blueSquare:hover {
+  background: #0087f5;
+}
 #carouselControl .active {
   background: #0087f5;
 }
@@ -184,6 +187,39 @@ h3 {
 }
 .card.news a:hover {
   text-decoration: underline;
+}
+
+.card.events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000066;
+  font-weight: 700;
+  gap: 1rem;
+}
+.card.events .event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+.card.events .datebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  color: #fff;
+  background: #000066;
+  margin-right: 1rem;
+  padding: 0 10px;
+  text-align: center;
 }
 
 * {
