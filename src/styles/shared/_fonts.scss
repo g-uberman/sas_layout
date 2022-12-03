@@ -3,6 +3,7 @@ h1 {
   font-weight: 900;
   font-size: 4rem;
   line-height: 1;
+  text-align: center;
   color: $white;
 }
 
@@ -10,20 +11,16 @@ h2 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 3rem;
+  line-height: 1;
+  text-align: center;
   color: $white;
 }
 
 h3 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
   color: $white;
-}
-
-.gold {
-    color: $gold;
-}
-
-.blue {
-  color: $darkBlue;
 }
