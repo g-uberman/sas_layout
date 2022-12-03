@@ -26,11 +26,12 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 2rem;
   line-height: 1;
   text-align: center;
   color: #fff;
+  padding-bottom: 1.625rem;
 }
 
 #header {
@@ -165,6 +166,24 @@ h3 {
 }
 .card button {
   margin: 36px 0;
+}
+
+.card.news {
+  text-align: center;
+  line-height: 1.35;
+  color: #fff;
+}
+.card.news div {
+  margin-bottom: 1rem;
+}
+.card.news a, .card.news a:visited {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+.card.news a:hover {
+  text-decoration: underline;
 }
 
 * {
