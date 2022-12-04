@@ -12,7 +12,7 @@ export const NavBar = () => {
         <button>Career</button>
         <button>Contact</button>
       </div>
-      <div className="cell right"><Search id="search" /></div>
+      <div className="cell right"><Search className="search" /></div>
     </div>
   );
 };

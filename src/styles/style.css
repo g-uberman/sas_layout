@@ -45,7 +45,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   background: #000099;
   height: 82px;
   transition: height 0.3s ease-in-out;
@@ -76,11 +77,6 @@ h3 {
 #navbar button:hover {
   color: #0087f5;
 }
-#navbar #search {
-  color: #fff;
-  scale: 1.4;
-  cursor: pointer;
-}
 #navbar .cell {
   min-width: 40px;
 }
@@ -96,6 +92,27 @@ h3 {
   #navbar {
     display: none;
   }
+}
+
+.searchIcon {
+  color: #fff;
+  scale: 1.4;
+  cursor: pointer;
+}
+
+.menuIcon {
+  color: #fff;
+  scale: 1.8;
+  text-align: right;
+  cursor: pointer;
+}
+
+.navCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60px;
 }
 
 #carousel {

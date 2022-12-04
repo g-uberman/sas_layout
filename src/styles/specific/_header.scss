@@ -6,7 +6,8 @@
 }
 
 #logoBar {
-    @include flexCenter(column);
+    @include flexCenter(row);
+    justify-content: space-between;
     background: $mainBlue;
     height: 82px;
     transition: height 0.3s ease-in-out;
@@ -15,7 +16,7 @@
         height: 55px;
     }
 
-    &.scrolled{
+    &.scrolled {
         height: 66px
     }
 }

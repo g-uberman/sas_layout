@@ -16,12 +16,6 @@
     }
   }
 
-  #search {
-    color: $white;
-    scale: 1.4;
-    cursor: pointer;
-  }
-
   .cell {
     min-width: 40px;
   }
@@ -35,4 +29,22 @@
   @media screen and (max-width: 1086px) {
     display: none;
   }
+}
+
+.searchIcon {
+  color: $white;
+  scale: 1.4;
+  cursor: pointer;
+}
+
+.menuIcon {
+  color: $white;
+  scale: 1.8;
+  text-align: right;
+  cursor: pointer;
+}
+
+.navCell {
+  @include flexCenter(row);
+  width: 60px;
 }
