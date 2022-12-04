@@ -196,7 +196,7 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  min-height: 618px;
+  height: 618px;
   padding: 26px 32px 96px;
   background: #000066;
   border: 1px solid #000066;
@@ -218,6 +218,11 @@ h3 {
 }
 .card a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    height: auto;
+  }
 }
 
 .card.news {
