@@ -2,6 +2,7 @@
   @include flexCenter(column);
   height: 610px;
   position: relative;
+  overflow: hidden;
 
   &.zero {
     background-image: url("../images/banner0.jpg");
@@ -23,12 +24,26 @@
 
   .blueBox {
     @include flexCenter(column);
-    height: 200px;
+    min-height: 200px;
+    width: 95%;
+    max-width: 950px;
     background: $darkBlue;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     border-radius: 4px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 352px;
+
+    .blueBox {
+      min-height: 180px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
   }
 }
 
