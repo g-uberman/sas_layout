@@ -114,6 +114,11 @@ h3 {
   flex-direction: row;
   width: 60px;
 }
+@media screen and (min-width: 1087px) {
+  .navCell {
+    z-index: -1;
+  }
+}
 
 #carousel {
   display: flex;

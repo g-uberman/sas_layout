@@ -42,9 +42,14 @@
   scale: 1.8;
   text-align: right;
   cursor: pointer;
+  
 }
 
 .navCell {
   @include flexCenter(row);
   width: 60px;
+
+  @media screen and (min-width: 1087px) {
+    z-index: -1;
+  }
 }
