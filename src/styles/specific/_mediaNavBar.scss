@@ -1,0 +1,36 @@
+#mediaNavBar {
+    @include flexCenter(row);
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+
+    button {
+        @include flexCenter(row);
+        padding: 1rem;
+        color: $blackBlue;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        line-height: 1.5rem;
+        font-weight: 900;
+        border-radius: 14px 14px 0 0;
+        border: 1px solid $grey;
+        border-bottom: none;
+        background: $white;
+        cursor: pointer;
+    }
+
+    .iconWrapper {
+        @include flexCenter(row);
+        height: 42px;
+        width: 42px;
+        border-radius: 50%;
+        background: $iconBlue;
+        margin-right: 0.7rem;
+    }
+
+    .icon {
+        color: $white;
+        scale: 1.3;
+    }
+}

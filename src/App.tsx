@@ -4,6 +4,7 @@ import { Carousel } from './components/Carousel';
 import { Header } from './components/Header';
 import { Supplier } from './components/Supplier';
 import { Featured } from './components/Featured';
+import { MediaNavBar } from './components/MediaNavBar';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Cards />
     <Supplier />
     <Featured />
+    <MediaNavBar />
     </>
   );
 }

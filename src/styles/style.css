@@ -208,7 +208,7 @@ strong {
 }
 .navMap .divider {
   width: 1px;
-  background: #BFBCB5;
+  background: #dddddd;
   margin-right: 20px;
 }
 .navMap li {
@@ -518,6 +518,49 @@ strong {
 
 .arrowIcon {
   scale: 1.5;
+}
+
+#mediaNavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+#mediaNavBar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  color: #000033;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-weight: 900;
+  border-radius: 14px 14px 0 0;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  background: #fff;
+  cursor: pointer;
+}
+#mediaNavBar .iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: #0033cc;
+  margin-right: 0.7rem;
+}
+#mediaNavBar .icon {
+  color: #fff;
+  scale: 1.3;
 }
 
 * {
