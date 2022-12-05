@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-    Bungalow,
   Instagram as InstagramIcon,
   Twitter as TwitterIcon,
   YouTube as YoutubeIcon,

@@ -53,6 +53,14 @@
                 background: $blackBlue;
             }
         }
+
+        @media screen and (max-width: 669px) {
+            font-size: 0;
+
+            .iconWrapper {
+                margin-right: 0;
+            }
+          }
     }
 }
 
@@ -67,4 +75,8 @@
     article {
         flex: 1;
     }
+
+    @media screen and (max-width: 669px) {
+        @include flexCenter(column);
+      }
 }

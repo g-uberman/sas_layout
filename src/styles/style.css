@@ -589,6 +589,14 @@ p {
 #mediaNavBar button:not(.active):hover .iconWrapper {
   background: #000033;
 }
+@media screen and (max-width: 669px) {
+  #mediaNavBar button {
+    font-size: 0;
+  }
+  #mediaNavBar button .iconWrapper {
+    margin-right: 0;
+  }
+}
 
 .mediaWrapper {
   width: 95%;
@@ -604,6 +612,14 @@ p {
 }
 .mediaWrapper article {
   flex: 1;
+}
+@media screen and (max-width: 669px) {
+  .mediaWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 #instagram .image {
