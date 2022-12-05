@@ -1,14 +1,17 @@
 #cardWrapper {
   @include flexCenter(row);
+  align-items: stretch;
   width: 95%;
   max-width: 1104px;
   gap: 20px;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  min-height: 618px;
 
   @media screen and (max-width: 768px) {
     @include flexCenter(column);
+    min-height: 0;
   }
 }
 
@@ -16,7 +19,6 @@
   @include flexCenter(column);
   justify-content: flex-start;
   width: 100%;
-  height: 618px;
   padding: 26px 32px 96px;
   background: $darkBlue;
   border: 1px solid $darkBlue;
