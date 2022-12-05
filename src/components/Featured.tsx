@@ -15,11 +15,13 @@ export const Featured = () => {
           0.57 SEK
         </h3>
         <div id="stockWrapper">
-            <ArrowForward className="arrowIcon"/>
-          <div>
-            -2.48%
-            <br />
-            -0.01 SEK
+          <div id="arrowWrapper">
+            <ArrowForward className="arrowIcon" />
+            <div>
+              -2.48%
+              <br />
+              -0.01 SEK
+            </div>
           </div>
           <div>
             5 December 2022 at 18:00 CET
