@@ -1,0 +1,19 @@
+#twitter {
+    p {
+        font-size: .9rem;
+    line-height: 1.2rem;
+    }
+
+    a {
+        display: block;
+        color: $typeBlue;
+
+        &:visited {
+            color: $typeBlue;
+        }
+
+        &:hover {
+            color: $blackBlue;
+        }
+    }
+}

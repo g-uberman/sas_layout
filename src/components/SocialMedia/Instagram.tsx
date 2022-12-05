@@ -1,6 +1,6 @@
 export const Instagram = () => {
   return (
-    <div className="mediaWrapper">
+    <div id="instagram" className="mediaWrapper">
       <article>
         <div className="image img1"></div>
         <p>

@@ -560,11 +560,6 @@ p {
   border: 1px solid #f4f4f4;
   border-bottom: 1px solid #dddddd;
 }
-#mediaNavBar button.active {
-  background: #fff;
-  border: 1px solid #dddddd;
-  border-bottom: 1px solid #fff;
-}
 #mediaNavBar button .iconWrapper {
   display: flex;
   justify-content: center;
@@ -575,6 +570,14 @@ p {
   border-radius: 50%;
   margin-right: 0.7rem;
   background: #0033cc;
+}
+#mediaNavBar button.active {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid #fff;
+}
+#mediaNavBar button.active .iconWrapper {
+  background: #000033;
 }
 #mediaNavBar button .icon {
   color: #fff;
@@ -598,11 +601,11 @@ p {
   margin: 0 auto;
   gap: 1rem;
 }
-
-article {
+.mediaWrapper article {
   flex: 1;
 }
-article .image {
+
+#instagram .image {
   width: 100%;
   height: 17rem;
   border-radius: 4px;
@@ -610,14 +613,29 @@ article .image {
   background-size: cover;
   background-position: center;
 }
-article .img1 {
+#instagram .img1 {
   background-image: url("../images/198996937.jpg");
 }
-article .img2 {
+#instagram .img2 {
   background-image: url("../images/195273938.jpg");
 }
-article .img3 {
+#instagram .img3 {
   background-image: url("../images/194811756.jpg");
+}
+
+#twitter p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+#twitter a {
+  display: block;
+  color: #0159ce;
+}
+#twitter a:visited {
+  color: #0159ce;
+}
+#twitter a:hover {
+  color: #000033;
 }
 
 * {
