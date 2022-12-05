@@ -1,3 +1,5 @@
+import { ArrowForward } from "@mui/icons-material";
+
 export const Featured = () => {
   return (
     <div id="featured">
@@ -12,6 +14,19 @@ export const Featured = () => {
           Latest Share <br />
           0.57 SEK
         </h3>
+        <div id="stockWrapper">
+            <ArrowForward className="arrowIcon"/>
+          <div>
+            -2.48%
+            <br />
+            -0.01 SEK
+          </div>
+          <div>
+            5 December 2022 at 18:00 CET
+            <br />
+            SAS AB | Stockholm
+          </div>
+        </div>
       </div>
     </div>
   );
