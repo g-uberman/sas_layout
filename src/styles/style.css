@@ -92,9 +92,23 @@ strong {
   padding: 0 1.25rem 0;
   font-weight: 400;
   font-size: 1em;
+  position: relative;
 }
 #navbar button:hover {
   color: #0087f5;
+}
+#navbar button.active::after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: 37px;
+  background: #f4f4f4;
 }
 #navbar .cell {
   min-width: 40px;
@@ -169,6 +183,9 @@ strong {
   left: -8px;
   margin-right: -0.9rem;
 }
+.navMapWrapper :hover {
+  color: #0087f5;
+}
 
 .navMap {
   display: flex;
@@ -189,9 +206,6 @@ strong {
   line-height: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
-}
-.navMap li:hover {
-  color: #0087f5;
 }
 
 #carousel {

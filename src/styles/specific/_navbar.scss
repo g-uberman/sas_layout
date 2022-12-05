@@ -11,9 +11,24 @@
     padding: 0 1.25rem 0;
     font-weight: 400;
     font-size: 1em;
+    position: relative;
 
     &:hover {
       color: $lightBlue;
+    }
+
+    &.active::after {
+      content: " ";
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      margin: 0 auto;
+      transform: rotate(45deg);
+      left: 0;
+      right: 0;
+      top: 37px;
+      background: $offWhite;
     }
   }
 

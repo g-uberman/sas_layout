@@ -25,6 +25,10 @@
         left: -8px;
         margin-right: -0.9rem;
     }
+
+    :hover {
+        color: $lightBlue;
+    }
 }
 
 .navMap {
@@ -43,9 +47,5 @@
         line-height: 1rem;
         margin-bottom: 1rem;
         cursor: pointer;
-    }
-
-    li:hover {
-        color: $lightBlue;
     }
 }
