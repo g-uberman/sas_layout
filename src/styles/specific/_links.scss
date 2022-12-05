@@ -1,0 +1,48 @@
+#links {
+    @include flexCenter(row);
+    background: $grey;
+    width: 100%;
+    min-height: 84px;
+    padding: 1rem;
+    
+    ul {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 1.5rem;
+
+        @media screen and (max-width: 667px) {
+            @include flexCenter(column);
+            align-items: flex-start;
+          }
+    }
+    
+    li {
+        @include flexCenter(row);
+        gap: 10px;
+        color: $typeBlue;
+        cursor: pointer;
+
+        &:hover {
+            color: $blackBlue;
+            text-decoration: underline;
+
+            .iconWrapper {
+                background-color: $blackBlue;
+            }
+        }
+    }
+
+    .iconWrapper {
+        @include flexCenter(row);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $iconBlue;
+    }
+
+    .icon {
+        color: $white;
+        scale: 0.9;
+    }
+}
