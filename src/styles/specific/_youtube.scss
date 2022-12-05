@@ -1,0 +1,42 @@
+#youtube {
+  .image {
+    @include flexCenter(row);
+    width: 100%;
+    height: 17rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+        .iconWrapper {
+            background: $white;
+        }
+      }
+  }
+
+  .img1 {
+    background-image: url("../images/maxresdefault.jpg");
+  }
+
+  .img2 {
+    background-image: url("../images/maxresdefault(1).jpg");
+  }
+
+  .img3 {
+    background-image: url("../images/maxresdefault(2).jpg");
+  }
+
+  .iconWrapper {
+    @include flexCenter(row);
+    background: #fffa;
+    height: 93px;
+    width: 93px;
+    border-radius: 50%;
+
+    .thumbIcon {
+      scale: 3;
+      color: $mainBlue;
+    }
+  }
+}
