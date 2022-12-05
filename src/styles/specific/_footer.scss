@@ -1,0 +1,44 @@
+#footer {
+  @include wrapperWidth;
+  @include flexCenter(row);
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  padding-bottom: 2rem;
+
+  section {
+    flex: 1;
+    min-width: 200px;
+    flex-shrink: 0;
+  }
+
+  section,
+  p {
+    color: $beige;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .links {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    gap: 10px;
+
+    span {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .divider {
+    width: 1px;
+    height: 1rem;
+    background: $beige;
+  }
+
+  #imageWrapper {
+    @include flexCenter(row);
+  }
+}
