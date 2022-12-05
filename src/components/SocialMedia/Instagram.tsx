@@ -1,3 +1,7 @@
 export const Instagram = () => {
-    return <></>
+    return (
+    <>
+    Instagram
+    </>
+    )
 }

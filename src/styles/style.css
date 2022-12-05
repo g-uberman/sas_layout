@@ -529,6 +529,7 @@ strong {
   margin-top: 4rem;
   margin-bottom: 2rem;
   gap: 1rem;
+  border-bottom: 1px solid #dddddd;
 }
 #mediaNavBar button {
   display: flex;
@@ -543,8 +544,10 @@ strong {
   font-weight: 900;
   border-radius: 14px 14px 0 0;
   border: 1px solid #dddddd;
-  border-bottom: none;
+  border-bottom: 1px solid #fff;
   background: #fff;
+  position: relative;
+  bottom: -1px;
   cursor: pointer;
 }
 #mediaNavBar .iconWrapper {
