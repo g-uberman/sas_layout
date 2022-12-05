@@ -1,7 +1,6 @@
 #supplier {
+    @include wrapperWidth;
     @include flexCenter(row);
-    width: 95%;
-    max-width: 1104px;
     height: 95px;
     margin: 0 auto;
     margin-top: 1rem;

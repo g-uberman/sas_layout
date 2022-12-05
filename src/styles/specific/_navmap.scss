@@ -31,10 +31,10 @@
 }
 
 .navMap {
+    @include wrapperWidth;
     @include flexCenter(row);
     justify-content: space-between;
     align-items: stretch;
-    width: 1104px;
 
     .stretcher {
         flex-grow: 1;

@@ -4,3 +4,8 @@
     align-items: center;
     flex-direction: $direction;
 }
+
+@mixin wrapperWidth {
+    width: 95%;
+    max-width: 1104px;
+}

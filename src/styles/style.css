@@ -52,6 +52,14 @@ strong {
   font-weight: 700;
 }
 
+p {
+  color: #3f3d3a;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
 #header {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -187,13 +195,14 @@ strong {
 }
 
 .navMap {
+  width: 95%;
+  max-width: 1104px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  width: 1104px;
 }
 .navMap .stretcher {
   flex-grow: 1;
@@ -290,13 +299,13 @@ strong {
 }
 
 #cardWrapper {
+  width: 95%;
+  max-width: 1104px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   align-items: stretch;
-  width: 95%;
-  max-width: 1104px;
   gap: 20px;
   margin: 0 auto;
   margin-top: 3rem;
@@ -333,7 +342,8 @@ strong {
   position: absolute;
   bottom: 36px;
 }
-.card a, .card a:visited {
+.card a,
+.card a:visited {
   display: block;
   text-decoration: none;
   font-weight: 700;
@@ -417,12 +427,12 @@ strong {
 }
 
 #supplier {
+  width: 95%;
+  max-width: 1104px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 95%;
-  max-width: 1104px;
   height: 95px;
   margin: 0 auto;
   margin-top: 1rem;
@@ -450,12 +460,12 @@ strong {
 }
 
 #featured {
+  width: 95%;
+  max-width: 1104px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 95%;
-  max-width: 1104px;
   margin: 0 auto;
   gap: 1rem;
   margin-top: 1rem;
@@ -575,6 +585,39 @@ strong {
 }
 #mediaNavBar button:not(.active):hover .iconWrapper {
   background: #000033;
+}
+
+.mediaWrapper {
+  width: 95%;
+  max-width: 1104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+article {
+  flex: 1;
+}
+article .image {
+  width: 100%;
+  height: 17rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+article .img1 {
+  background-image: url("../images/198996937.jpg");
+}
+article .img2 {
+  background-image: url("../images/195273938.jpg");
+}
+article .img3 {
+  background-image: url("../images/194811756.jpg");
 }
 
 * {
