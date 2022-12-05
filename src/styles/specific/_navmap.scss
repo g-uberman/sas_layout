@@ -16,10 +16,36 @@
 .navMapWrapper {
     @include flexCenter(column);
     align-items: flex-start;
+    width: 1104px;
+
+    .arrow {
+        scale: 1.5;
+        position: relative;
+        top: 4.5px;
+        left: -8px;
+        margin-right: -0.9rem;
+    }
 }
 
 .navMap {
     @include flexCenter(row);
-    align-items: flex-start;
-    column-gap: 40px;
+    align-items: stretch;
+    column-gap: 20px;
+
+    .divider {
+        width: 1px;
+        background: #BFBCB5;
+    }
+
+    li {
+        color: $blackBlue;
+        font-size: .875rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: $lightBlue;
+    }
 }

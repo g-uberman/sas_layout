@@ -6,6 +6,10 @@
   color: #000066;
 }
 
+body {
+  font-family: "Scandinavian New", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: 900;
@@ -37,11 +41,15 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   line-height: 1;
   text-align: center;
-  color: #000066;
+  color: #000099;
   padding-bottom: 1.625rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 #header {
@@ -152,6 +160,14 @@ h4 {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
+  width: 1104px;
+}
+.navMapWrapper .arrow {
+  scale: 1.5;
+  position: relative;
+  top: 4.5px;
+  left: -8px;
+  margin-right: -0.9rem;
 }
 
 .navMap {
@@ -159,9 +175,23 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  align-items: flex-start;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  align-items: stretch;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.navMap .divider {
+  width: 1px;
+  background: #BFBCB5;
+}
+.navMap li {
+  color: #000033;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.navMap li:hover {
+  color: #0087f5;
 }
 
 #carousel {
@@ -396,8 +426,4 @@ h4 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Scandinavian New", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }/*# sourceMappingURL=style.css.map */

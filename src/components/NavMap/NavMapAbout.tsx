@@ -1,18 +1,21 @@
+import { ArrowRight, Search } from "@mui/icons-material";
+
 export const NavMapAbout = () => {
   return (
     <div className="navMapWrapper">
-      <h4>About SAS</h4>
+      <h4><ArrowRight className="arrow"/> About SAS</h4>
       <div className="navMap">
         <ul>
-          <li>This is SAS</li>
+          <li><strong>This is SAS</strong></li>
           <li>SAS Community support</li>
           <li>SAS Code of Conduct</li>
           <li>Financial goals</li>
-          <li>Strategic priorities for a changing market</li>
-          <li>Business model</li>
+          <li><strong>Strategic priorities for a changing market</strong></li>
+          <li><strong>Business model</strong></li>
         </ul>
+        <div className="divider"></div>
         <ul>
-          <li>Fleet</li>
+          <li><strong>Fleet</strong></li>
           <li>Airbus A320neo/A321LR</li>
           <li>Airbus A319/A320/A321</li>
           <li>Airbus A330-300/A350-900</li>
@@ -22,12 +25,13 @@ export const NavMapAbout = () => {
           <li>ATR-72-600</li>
           <li>Aircraft on order</li>
           <li>Alliances and partners – Star Alliance</li>
-          <li>Board and management</li>
+          <li><strong>Board and management</strong></li>
           <li>SAS Board of Directors</li>
           <li>SAS Group Management</li>
         </ul>
+        <div className="divider"></div>
         <ul>
-          <li>Corporate governance</li>
+          <li><strong>Corporate governance</strong></li>
           <li>Legal structure</li>
           <li>Reports</li>
           <li>Shareholder meeting</li>
@@ -40,8 +44,9 @@ export const NavMapAbout = () => {
           <li>Financial information and reporting</li>
           <li>Articles of Association</li>
         </ul>
+        <div className="divider"></div>
         <ul>
-          <li>Bolagsstyrning</li>
+          <li><strong>Bolagsstyrning</strong></li>
           <li>Legal struktur</li>
           <li>Rapporter</li>
           <li>Bolagsstämma</li>
@@ -54,8 +59,9 @@ export const NavMapAbout = () => {
           <li>Rapportering av finansiell information</li>
           <li>Bolagsordning</li>
         </ul>
+        <div className="divider"></div>
         <ul>
-          <li>SAS History</li>
+          <li><strong>SAS History</strong></li>
           <li>History milestones</li>
           <li>Presidents of SAS, beginning in 1946</li>
           <li>The SAS Museum</li>

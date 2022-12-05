@@ -1,3 +1,7 @@
+body {
+  font-family: "Scandinavian New","Helvetica Neue","Helvetica","Arial","sans-serif";
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: 900;
@@ -29,9 +33,13 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   line-height: 1;
   text-align: center;
-  color: $darkBlue;
+  color: $mainBlue;
   padding-bottom: 1.625rem;
+}
+
+strong {
+  font-weight: 700;
 }
