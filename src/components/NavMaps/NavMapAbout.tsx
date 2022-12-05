@@ -1,4 +1,4 @@
-import { ArrowRight, Search } from "@mui/icons-material";
+import { ArrowRight } from "@mui/icons-material";
 
 export const NavMapAbout = () => {
   return (
@@ -8,6 +8,7 @@ export const NavMapAbout = () => {
           <ArrowRight className="arrow" /> About SAS
         </h4>
         <div className="navMap">
+          <div className="stretcher">
           <ul>
             <li>
               <strong>This is SAS</strong>
@@ -22,6 +23,8 @@ export const NavMapAbout = () => {
               <strong>Business model</strong>
             </li>
           </ul>
+          </div>
+          <div className="stretcher">
           <div className="divider"></div>
           <ul>
             <li>
@@ -42,6 +45,8 @@ export const NavMapAbout = () => {
             <li>SAS Board of Directors</li>
             <li>SAS Group Management</li>
           </ul>
+          </div>
+          <div className="stretcher">
           <div className="divider"></div>
           <ul>
             <li>
@@ -59,6 +64,8 @@ export const NavMapAbout = () => {
             <li>Financial information and reporting</li>
             <li>Articles of Association</li>
           </ul>
+          </div>
+          <div className="stretcher">
           <div className="divider"></div>
           <ul>
             <li>
@@ -76,6 +83,8 @@ export const NavMapAbout = () => {
             <li>Rapportering av finansiell information</li>
             <li>Bolagsordning</li>
           </ul>
+          </div>
+          <div className="stretcher">
           <div className="divider"></div>
           <ul>
             <li>
@@ -85,6 +94,7 @@ export const NavMapAbout = () => {
             <li>Presidents of SAS, beginning in 1946</li>
             <li>The SAS Museum</li>
           </ul>
+          </div>
         </div>
       </div>
     </div>

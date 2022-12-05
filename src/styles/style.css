@@ -174,7 +174,6 @@ strong {
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
-  width: 1104px;
 }
 .navMapWrapper .arrow {
   scale: 1.5;
@@ -192,13 +191,25 @@ strong {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
   align-items: stretch;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  width: 1104px;
+}
+.navMap .stretcher {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
 }
 .navMap .divider {
   width: 1px;
   background: #BFBCB5;
+  margin-right: 20px;
 }
 .navMap li {
   color: #000033;

@@ -16,8 +16,7 @@
 .navMapWrapper {
     @include flexCenter(column);
     align-items: flex-start;
-    width: 1104px;
-
+    
     .arrow {
         scale: 1.5;
         position: relative;
@@ -25,7 +24,7 @@
         left: -8px;
         margin-right: -0.9rem;
     }
-
+    
     :hover {
         color: $lightBlue;
     }
@@ -33,12 +32,23 @@
 
 .navMap {
     @include flexCenter(row);
+    justify-content: space-between;
     align-items: stretch;
-    column-gap: 20px;
+    width: 1104px;
+
+    .stretcher {
+        flex-grow: 1;
+        width: 100%;
+        @include flexCenter(row);
+        justify-content: flex-start;
+        align-items: stretch;
+        text-align: left;
+    }
 
     .divider {
         width: 1px;
         background: #BFBCB5;
+        margin-right: 20px;
     }
 
     li {
