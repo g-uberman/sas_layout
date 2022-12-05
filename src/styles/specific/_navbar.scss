@@ -17,6 +17,10 @@
       color: $lightBlue;
     }
 
+    &.active {
+      color: $lightBlue;
+    }
+
     &.active::after {
       content: " ";
       display: block;
