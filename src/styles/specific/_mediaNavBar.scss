@@ -15,25 +15,42 @@
         line-height: 1.5rem;
         font-weight: 900;
         border-radius: 14px 14px 0 0;
-        border: 1px solid $grey;
-        border-bottom: 1px solid $white;
-        background: $white;
+        // border: none;
         position: relative;
         bottom: -1px;
         cursor: pointer;
+        background: $offWhite;
+        border: 1px solid $offWhite;
+        border-bottom: 1px solid $grey;
+        
+        &.active {
+            background: $white;
+            border: 1px solid $grey;
+            border-bottom: 1px solid $white;
+        }
+
+        .iconWrapper {
+            @include flexCenter(row);
+            height: 42px;
+            width: 42px;
+            border-radius: 50%;
+            margin-right: 0.7rem;
+            background: $iconBlue;
+        }
+    
+        .icon {
+            color: $white;
+            scale: 1.3;
+        }
+
+        &:not(.active):hover {
+            background: $midGrey;
+
+            .iconWrapper {
+                background: $blackBlue;
+            }
+        }
     }
 
-    .iconWrapper {
-        @include flexCenter(row);
-        height: 42px;
-        width: 42px;
-        border-radius: 50%;
-        background: $iconBlue;
-        margin-right: 0.7rem;
-    }
 
-    .icon {
-        color: $white;
-        scale: 1.3;
-    }
 }

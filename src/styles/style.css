@@ -543,14 +543,19 @@ strong {
   line-height: 1.5rem;
   font-weight: 900;
   border-radius: 14px 14px 0 0;
-  border: 1px solid #dddddd;
-  border-bottom: 1px solid #fff;
-  background: #fff;
   position: relative;
   bottom: -1px;
   cursor: pointer;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-bottom: 1px solid #dddddd;
 }
-#mediaNavBar .iconWrapper {
+#mediaNavBar button.active {
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid #fff;
+}
+#mediaNavBar button .iconWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -558,12 +563,18 @@ strong {
   height: 42px;
   width: 42px;
   border-radius: 50%;
-  background: #0033cc;
   margin-right: 0.7rem;
+  background: #0033cc;
 }
-#mediaNavBar .icon {
+#mediaNavBar button .icon {
   color: #fff;
   scale: 1.3;
+}
+#mediaNavBar button:not(.active):hover {
+  background: #eae9e8;
+}
+#mediaNavBar button:not(.active):hover .iconWrapper {
+  background: #000033;
 }
 
 * {
