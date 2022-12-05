@@ -1,0 +1,44 @@
+#siteMap {
+    background: $offWhite;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+#siteMapWrapper {
+    @include wrapperWidth;
+    @include flexCenter(row);
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0.5rem;
+    color: $typeBlue;
+
+    h5 {
+        margin-bottom: 1.125rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $blackBlue;
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        font-size: .938rem;
+        line-height: 1.25rem;
+        margin-bottom: 0.625rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $blackBlue;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        @include flexCenter(column);
+        align-items: flex-start;
+      }
+}

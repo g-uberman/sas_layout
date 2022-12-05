@@ -6,6 +6,8 @@
 }
 
 @mixin wrapperWidth {
+    display: block;
     width: 95%;
     max-width: 1104px;
+    margin: 0 auto;
 }
