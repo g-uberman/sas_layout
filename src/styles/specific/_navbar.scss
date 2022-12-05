@@ -2,6 +2,7 @@
   @include flexCenter(row);
   background: $darkBlue;
   height: 70px;
+  position: relative;
 
   button {
     border: none;

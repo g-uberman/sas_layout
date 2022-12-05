@@ -1,0 +1,25 @@
+#navMapBackground {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+
+    @include flexCenter(column);
+
+    background: $offWhite;
+    padding: 2rem 0 3rem;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.navMapWrapper {
+    @include flexCenter(column);
+    align-items: flex-start;
+}
+
+.navMap {
+    @include flexCenter(row);
+    align-items: flex-start;
+    column-gap: 40px;
+}

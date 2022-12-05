@@ -1,4 +1,5 @@
-import { Search } from '@mui/icons-material';
+import { Search } from "@mui/icons-material";
+import { NavMapAbout } from "./NavMap/NavMapAbout"
 
 export const NavBar = () => {
   return (
@@ -12,7 +13,12 @@ export const NavBar = () => {
         <button>Career</button>
         <button>Contact</button>
       </div>
-      <div className="cell right"><Search className="searchIcon" /></div>
+      <div className="cell right">
+        <Search className="searchIcon" />
+      </div>
+      <div id="navMapBackground">
+        <NavMapAbout />
+      </div>
     </div>
   );
 };
