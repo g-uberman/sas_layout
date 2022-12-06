@@ -86,8 +86,10 @@ p {
 #logoBar img {
   height: 55px;
 }
-#logoBar.scrolled {
-  height: 66px;
+@media screen and (min-width: 1087px) {
+  #logoBar.scrolled {
+    height: 66px;
+  }
 }
 
 #navbar {

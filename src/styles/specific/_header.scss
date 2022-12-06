@@ -16,7 +16,9 @@
         height: 55px;
     }
 
-    &.scrolled {
-        height: 66px
-    }
+    @media screen and (min-width: 1087px) {
+        &.scrolled {
+            height: 66px
+        }
+      }
 }
