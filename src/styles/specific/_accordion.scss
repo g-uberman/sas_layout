@@ -27,12 +27,20 @@
         align-items: center;
         padding: 0.625rem 0 0.625rem 1rem;
         border-bottom: 1px solid $grey;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .pageBox {
         background: $offWhite;
         padding: 0.625rem 0 0.625rem 1.75rem;
         border-bottom: 1px solid $grey;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .title {

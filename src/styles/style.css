@@ -931,10 +931,16 @@ p {
   padding: 0.625rem 0 0.625rem 1rem;
   border-bottom: 1px solid #dddddd;
 }
+.accordionContainer .titleBox:hover {
+  text-decoration: underline;
+}
 .accordionContainer .pageBox {
   background: #f4f4f4;
   padding: 0.625rem 0 0.625rem 1.75rem;
   border-bottom: 1px solid #dddddd;
+}
+.accordionContainer .pageBox:hover {
+  text-decoration: underline;
 }
 .accordionContainer .title {
   text-transform: uppercase;

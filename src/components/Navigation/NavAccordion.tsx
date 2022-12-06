@@ -29,6 +29,9 @@ export const NavAccordion = () => {
             <div className="title">{item.title}</div>
             <span>{sections === titleIndex ? "-" : "+"}</span>
           </div>
+          <div className="titleBox">
+            <div>{item.title}</div>
+          </div>
           <div>
             {item.sections.map((section, sectionIndex) => (
               <div key={sectionIndex} className={sections === titleIndex ? "" : "collapsed"}>
