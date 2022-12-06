@@ -3,7 +3,7 @@ import { NavBar } from "./NavBar";
 import { Search, Menu } from "@mui/icons-material";
 
 import logo from "../images/logo.svg";
-import { Accordion } from "./Accodrion";
+import { NavAccordion } from "./Navigation/NavAccordion";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -43,7 +43,7 @@ export const Header = () => {
         </div>
       </div>
       <div id="accordionWrapper" style={openMenu ? {right: "0"} : {right: "-100vw"}}>
-        <Accordion />
+        <NavAccordion />
       </div>
       <NavBar />
     </div>
