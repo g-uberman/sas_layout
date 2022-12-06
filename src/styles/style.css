@@ -905,6 +905,11 @@ p {
   position: absolute;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (min-width: 1087px) {
+  #accordionWrapper {
+    display: none;
+  }
+}
 
 * {
   padding: 0;
