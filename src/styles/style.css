@@ -940,6 +940,16 @@ p {
   font-weight: 900;
   padding-right: 0.625rem;
 }
+.accordionContainer .collapsed {
+  padding: 0;
+  border: none;
+  max-height: 0;
+  overflow: hidden;
+}
+.accordionContainer .expanded {
+  max-height: initial;
+  overflow: initial;
+}
 
 * {
   padding: 0;
