@@ -272,8 +272,6 @@ p {
   align-items: center;
   flex-direction: column;
   min-height: 200px;
-  width: 95%;
-  max-width: 950px;
   background: #000066;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
