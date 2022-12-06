@@ -4,7 +4,7 @@ import { Carousel } from './components/Carousel';
 import { Header } from './components/Header';
 import { Supplier } from './components/Supplier';
 import { Featured } from './components/Featured';
-import { MediaNavBar } from './components/MediaNavBar';
+import { SocialMedia } from './components/SocialMedia';
 import { SiteMap } from './components/SiteMap';
 import { Links } from './components/Links';
 import { Footer } from './components/Footer';
@@ -17,7 +17,7 @@ function App() {
     <Cards />
     <Supplier />
     <Featured />
-    <MediaNavBar />
+    <SocialMedia />
     <SiteMap />
     <Links />
     <Footer />

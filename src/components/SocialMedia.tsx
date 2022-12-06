@@ -8,7 +8,7 @@ import { Instagram } from "./SocialMedia/Instagram";
 import { Twitter } from "./SocialMedia/Twitter";
 import { Youtube } from "./SocialMedia/Youtube";
 
-export const MediaNavBar = () => {
+export const SocialMedia = () => {
   const [instagram, setInstagram] = useState(true);
   const [twitter, setTwitter] = useState(false);
   const [youtube, setYoutube] = useState(false);
