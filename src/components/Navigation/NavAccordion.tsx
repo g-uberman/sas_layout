@@ -13,6 +13,14 @@ export const NavAccordion = () => {
         }
     }
 
+    const togglePages = (sectionIndex: number) => {
+        if (pages === sectionIndex) {
+            setPages(null);
+        } else {
+            setPages(sectionIndex);
+        }
+    }
+
   return (
     <div className="accordionContainer">
       {navData.map((item, titleIndex) => (
@@ -24,13 +32,13 @@ export const NavAccordion = () => {
           <div>
             {item.sections.map((section, sectionIndex) => (
               <div key={sectionIndex} className={sections === titleIndex ? "" : "collapsed"}>
-                <div className="titleBox">
+                <div className="titleBox" onClick={() => togglePages(sectionIndex)}>
                 <div>{section.header}</div>
-                <span>+</span>
+                <span>{pages === sectionIndex ? "-" : "+"}</span>
                 </div>
-                <div>
+                <div  className={pages === sectionIndex ? "" : "collapsed"}>
                   {section.pages.map((page, pageIndex) => (
-                    <div className="pageBox collapsed" key={pageIndex}>
+                    <div className="pageBox" key={pageIndex}>
                       {page}
                     </div>
                   ))}

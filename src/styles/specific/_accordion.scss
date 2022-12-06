@@ -11,6 +11,7 @@
 }
 
 .accordionContainer {
+    @include blockSelection;
     color: $darkBlue;
     font-size: .875rem;
     line-height: .875rem;
@@ -40,6 +41,9 @@
     }
 
     span {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
         font-weight: 900;
         padding-right: 0.625rem;
     }
@@ -49,10 +53,5 @@
         border: none;
         max-height: 0;
         overflow: hidden;
-    }
-
-    .expanded {
-        max-height: initial;
-        overflow: initial;
     }
 }

@@ -912,6 +912,10 @@ p {
 }
 
 .accordionContainer {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   color: #000066;
   font-size: 0.875rem;
   line-height: 0.875rem;
@@ -937,6 +941,9 @@ p {
   font-weight: 900;
 }
 .accordionContainer span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
   font-weight: 900;
   padding-right: 0.625rem;
 }
@@ -945,10 +952,6 @@ p {
   border: none;
   max-height: 0;
   overflow: hidden;
-}
-.accordionContainer .expanded {
-  max-height: initial;
-  overflow: initial;
 }
 
 * {
