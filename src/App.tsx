@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div id="screenWrapper">
+    <>
     <Header />
     <Carousel />
     <Cards />
@@ -21,7 +21,7 @@ function App() {
     <SiteMap />
     <Links />
     <Footer />
-    </div>
+    </>
   );
 }
 

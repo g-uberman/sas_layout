@@ -914,6 +914,8 @@ p {
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  position: fixed;
+  top: 82px;
 }
 @media screen and (min-width: 1087px) {
   #accordionWrapper {
@@ -923,6 +925,7 @@ p {
 @media screen and (max-width: 667px) {
   #accordionWrapper {
     min-height: calc(100vh - 60px);
+    top: 60px;
   }
 }
 
@@ -934,7 +937,14 @@ p {
   color: #000066;
   font-size: 0.875rem;
   line-height: 0.875rem;
+  height: calc(100vh - 82px);
+  overflow: scroll;
   cursor: pointer;
+}
+@media screen and (max-width: 667px) {
+  .accordionContainer {
+    height: calc(100vh - 60px);
+  }
 }
 .accordionContainer .itemBox {
   border-bottom: 2px solid #000066;
@@ -974,19 +984,6 @@ p {
   padding: 0;
   border: none;
   max-height: 0;
-  overflow: hidden;
-}
-
-.itemBox:last-of-type {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-#screenWrapper {
-  position: absolute;
-  width: 100%;
-  min-height: 100vh;
   overflow: hidden;
 }
 

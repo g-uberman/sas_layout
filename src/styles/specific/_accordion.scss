@@ -5,8 +5,8 @@
   position: absolute;
   transition: all 0.3s ease-in-out;
   z-index: 1;
-//   position: fixed;
-//   top: 0;
+  position: fixed;
+  top: 82px;
 
   @media screen and (min-width: 1087px) {
     display: none;
@@ -14,6 +14,7 @@
 
   @media screen and (max-width: 667px) {
     min-height: calc(100vh - 60px);
+    top: 60px;
   }
 }
 
@@ -22,10 +23,13 @@
   color: $darkBlue;
   font-size: 0.875rem;
   line-height: 0.875rem;
+  height: calc(100vh - 82px);
+  overflow: scroll;
   cursor: pointer;
 
-//   min-height: calc(100vh - 82px);
-//   overflow: scroll;
+  @media screen and (max-width: 667px) {
+    height: calc(100vh - 60px);
+  }
 
   .itemBox {
     border-bottom: 2px solid $darkBlue;
@@ -75,17 +79,4 @@
     max-height: 0;
     overflow: hidden;
   }
-}
-
-.itemBox:last-of-type {
-    position: sticky;
-    top: 0;
-    // background: red;
-}
-
-#screenWrapper {
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
 }
