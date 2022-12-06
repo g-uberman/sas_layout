@@ -50,10 +50,13 @@
 
     span {
         display: inline-block;
-        width: 20px;
+        width: 25px;
         text-align: center;
-        font-weight: 900;
         padding-right: 0.625rem;
+
+        svg {
+            scale: 0.6;
+        }
     }
 
     .collapsed {

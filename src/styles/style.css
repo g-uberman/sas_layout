@@ -948,10 +948,12 @@ p {
 }
 .accordionContainer span {
   display: inline-block;
-  width: 20px;
+  width: 25px;
   text-align: center;
-  font-weight: 900;
   padding-right: 0.625rem;
+}
+.accordionContainer span svg {
+  scale: 0.6;
 }
 .accordionContainer .collapsed {
   padding: 0;
