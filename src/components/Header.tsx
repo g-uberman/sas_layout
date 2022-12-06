@@ -3,29 +3,47 @@ import { NavBar } from "./NavBar";
 import { Search, Menu } from "@mui/icons-material";
 
 import logo from "../images/logo.svg";
+import { Accordion } from "./Accodrion";
 
 export const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  window.onscroll = () => {scrollHandler()};
+  window.onscroll = () => {
+    scrollHandler();
+  };
 
-  function scrollHandler() {
-    if (document.body.scrollTop > 152 || document.documentElement.scrollTop > 152) {
+  const scrollHandler = () => {
+    if (
+      document.body.scrollTop > 152 ||
+      document.documentElement.scrollTop > 152
+    ) {
       document.getElementById("logoBar")?.classList.add("scrolled");
       setScrolled(true);
     } else {
       if (scrolled) {
         document.getElementById("logoBar")?.classList.remove("scrolled");
-        setScrolled(false)
-      };
+        setScrolled(false);
+      }
     }
-  }
+  };
+
+  const handleHamburger = () => {
+    setOpenMenu(!openMenu);
+  };
 
   return (
     <div id="header">
       <div id="logoBar">
-        <div className="navCell"><Menu className="menuIcon"/></div>
+        <div className="navCell">
+          <Menu className="menuIcon" onClick={handleHamburger} />
+        </div>
         <img src={logo} />
-        <div className="navCell"><Search className="searchIcon" /></div>
+        <div className="navCell">
+          <Search className="searchIcon" />
+        </div>
+      </div>
+      <div id="accordionWrapper" style={openMenu ? {right: "0"} : {right: "-100vw"}}>
+        <Accordion />
       </div>
       <NavBar />
     </div>

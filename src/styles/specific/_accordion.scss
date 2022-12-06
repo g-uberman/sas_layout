@@ -1,0 +1,7 @@
+#accordionWrapper {
+    width: 100%;
+    height: calc(100vh - 82px);
+    background: $white;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
