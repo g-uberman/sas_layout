@@ -16,12 +16,14 @@
     color: $beige;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    margin-bottom: 0;
   }
 
   .links {
     @include flexCenter(row);
     flex-wrap: wrap;
     column-gap: 10px;
+    max-width: 300px;
 
     span {
       cursor: pointer;
@@ -40,5 +42,11 @@
 
   #imageWrapper {
     @include flexCenter(row);
+  }
+
+  @media screen and (max-width: 667px) {
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
   }
 }
