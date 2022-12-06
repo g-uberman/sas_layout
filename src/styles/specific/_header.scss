@@ -1,4 +1,4 @@
-#header {
+#navWrapper{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -19,6 +19,14 @@
     @media screen and (min-width: 1087px) {
         &.scrolled {
             height: 66px
+        }
+      }
+
+      @media screen and (max-width: 667px) {
+        height: 60px;
+
+        img {
+            height: 40px;
         }
       }
 }

@@ -32,20 +32,25 @@ export const Header = () => {
   };
 
   return (
-    <div id="header">
-      <div id="logoBar">
-        <div className="navCell">
-          <Menu className="menuIcon" onClick={handleHamburger} />
+    <div id="navWrapper">
+      <div id="header">
+        <div id="logoBar">
+          <div className="navCell">
+            <Menu className="menuIcon" onClick={handleHamburger} />
+          </div>
+          <img src={logo} />
+          <div className="navCell">
+            <Search className="searchIcon" />
+          </div>
         </div>
-        <img src={logo} />
-        <div className="navCell">
-          <Search className="searchIcon" />
-        </div>
+        <NavBar />
       </div>
-      <div id="accordionWrapper" style={openMenu ? {right: "0"} : {right: "-100vw"}}>
+      <div
+        id="accordionWrapper"
+        style={openMenu ? { right: "0" } : { right: "-100vw" }}
+      >
         <NavAccordion />
       </div>
-      <NavBar />
     </div>
   );
 };
