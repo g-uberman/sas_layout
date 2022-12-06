@@ -21,7 +21,7 @@
   .links {
     @include flexCenter(row);
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 10px;
 
     span {
       cursor: pointer;

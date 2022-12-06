@@ -218,7 +218,7 @@ export const navData: NavData[] = [
       },
       {
         header: "Calendar",
-        pages: ["Calendar"],
+        pages: ["Silent period"],
       },
       {
         header: "Corporate governance",
