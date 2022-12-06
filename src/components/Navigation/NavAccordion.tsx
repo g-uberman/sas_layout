@@ -34,7 +34,7 @@ export const NavAccordion = () => {
               <div key={sectionIndex} className={sections === titleIndex ? "" : "collapsed"}>
                 <div className="titleBox" onClick={() => togglePages(sectionIndex)}>
                 <div>{section.header}</div>
-                <span>{pages === sectionIndex ? "-" : "+"}</span>
+                {section.pages.length > 0 && <span>{pages === sectionIndex ? "-" : "+"}</span>}
                 </div>
                 <div  className={pages === sectionIndex ? "" : "collapsed"}>
                   {section.pages.map((page, pageIndex) => (
