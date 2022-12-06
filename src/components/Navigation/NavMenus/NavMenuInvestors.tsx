@@ -1,6 +1,6 @@
 import { ArrowRight } from "@mui/icons-material";
 
-export const NavMapInvestors = () => {
+export const NavMenuInvestors = () => {
   return (
     <div id="navMapBackground">
       <div className="navMapWrapper">

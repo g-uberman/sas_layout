@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Search } from "@mui/icons-material";
-import { NavMapAbout } from "./NavMaps/NavMapAbout";
-import { NavMapSustainability } from "./NavMaps/NavMapSustainability";
-import { NavMapInvestors } from "./NavMaps/NavMapInvestors";
-import { NavMapNewsroom } from "./NavMaps/NavMapNewsroom";
-import { NavMapCareer } from "./NavMaps/NavMapCareer";
-import { NavMapContact } from "./NavMaps/NavMapContact";
+import { NavMenuAbout } from "./Navigation/NavMenus/NavMenuAbout";
+import { NavMenuSustainability } from "./Navigation/NavMenus/NavMenuSustainability";
+import { NavMenuInvestors } from "./Navigation/NavMenus/NavMenuInvestors";
+import { NavMenuNewsroom } from "./Navigation/NavMenus/NavMenuNewsroom";
+import { NavMenuCareer } from "./Navigation/NavMenus/NavMenuCareer";
+import { NavMenuContact } from "./Navigation/NavMenus/NavMenuContact";
 
 export const NavBar = () => {
   const [about, setAbout] = useState(false);
@@ -90,12 +90,12 @@ export const NavBar = () => {
       <div className="cell right">
         <Search className="searchIcon" />
       </div>
-      {about && <NavMapAbout />}
-      {sustainability && <NavMapSustainability />}
-      {investors && <NavMapInvestors />}
-      {newsroom && <NavMapNewsroom />}
-      {career && <NavMapCareer />}
-      {contact && <NavMapContact />}
+      {about && <NavMenuAbout />}
+      {sustainability && <NavMenuSustainability />}
+      {investors && <NavMenuInvestors />}
+      {newsroom && <NavMenuNewsroom />}
+      {career && <NavMenuCareer />}
+      {contact && <NavMenuContact />}
     </div>
   );
 };
