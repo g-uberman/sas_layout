@@ -32,7 +32,7 @@ export const Header = () => {
   };
 
   return (
-    <div id="navWrapper">
+    <>
       <div id="header">
         <div id="logoBar">
           <div className="navCell">
@@ -51,6 +51,6 @@ export const Header = () => {
       >
         <NavAccordion />
       </div>
-    </div>
+    </>
   );
 };

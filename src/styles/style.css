@@ -66,8 +66,8 @@ p {
   margin-bottom: 1.4rem;
 }
 
-#navWrapper {
-  position: -webkit-sticky; /* Safari */
+#header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -913,10 +913,16 @@ p {
   background: #fff;
   position: absolute;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 @media screen and (min-width: 1087px) {
   #accordionWrapper {
     display: none;
+  }
+}
+@media screen and (max-width: 667px) {
+  #accordionWrapper {
+    min-height: calc(100vh - 60px);
   }
 }
 
@@ -968,6 +974,19 @@ p {
   padding: 0;
   border: none;
   max-height: 0;
+  overflow: hidden;
+}
+
+.itemBox:last-of-type {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#screenWrapper {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 

@@ -1,68 +1,91 @@
 #accordionWrapper {
-    width: 100%;
-    min-height: calc(100vh - 82px);
-    background: $white;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
+  width: 100%;
+  min-height: calc(100vh - 82px);
+  background: $white;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+//   position: fixed;
+//   top: 0;
 
-    @media screen and (min-width: 1087px) {
-        display: none;
-      }
+  @media screen and (min-width: 1087px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 667px) {
+    min-height: calc(100vh - 60px);
+  }
 }
 
 .accordionContainer {
-    @include blockSelection;
-    color: $darkBlue;
-    font-size: .875rem;
-    line-height: .875rem;
-    cursor: pointer;
+  @include blockSelection;
+  color: $darkBlue;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  cursor: pointer;
 
-    .itemBox {
-        border-bottom: 2px solid $darkBlue;
+//   min-height: calc(100vh - 82px);
+//   overflow: scroll;
+
+  .itemBox {
+    border-bottom: 2px solid $darkBlue;
+  }
+
+  .titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0 0.625rem 1rem;
+    border-bottom: 1px solid $grey;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    .titleBox {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.625rem 0 0.625rem 1rem;
-        border-bottom: 1px solid $grey;
+  .pageBox {
+    background: $offWhite;
+    padding: 0.625rem 0 0.625rem 1.75rem;
+    border-bottom: 1px solid $grey;
 
-        &:hover {
-            text-decoration: underline;
-        }
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    .pageBox {
-        background: $offWhite;
-        padding: 0.625rem 0 0.625rem 1.75rem;
-        border-bottom: 1px solid $grey;
+  .title {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
 
-        &:hover {
-            text-decoration: underline;
-        }
+  span {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    padding-right: 0.625rem;
+
+    svg {
+      scale: 0.6;
     }
+  }
 
-    .title {
-        text-transform: uppercase;
-        font-weight: 900;
-    }
+  .collapsed {
+    padding: 0;
+    border: none;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
 
-    span {
-        display: inline-block;
-        width: 25px;
-        text-align: center;
-        padding-right: 0.625rem;
+.itemBox:last-of-type {
+    position: sticky;
+    top: 0;
+    // background: red;
+}
 
-        svg {
-            scale: 0.6;
-        }
-    }
-
-    .collapsed {
-        padding: 0;
-        border: none;
-        max-height: 0;
-        overflow: hidden;
-    }
+#screenWrapper {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }
